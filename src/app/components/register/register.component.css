@@ -1,0 +1,4 @@
+.register .message {
+    display: grid;
+    justify-content: center;
+}

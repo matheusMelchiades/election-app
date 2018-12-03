@@ -1,0 +1,20 @@
+<div class="container-login">
+
+  <div class="content-title">
+    <h3>Login</h3>
+  </div>
+  <form [formGroup]="loginForm">
+
+    <input type="email" placeholder="Email address" required autofocus formControlName="email">
+
+    <input type="password" placeholder="Password" minlength="8" required formControlName="password">
+
+    <button type="submit" (click)="login()" (keyup)="login()">Sign in</button>
+  </form>
+
+
+  <hr>
+  <div class="message">
+    {{ resp }}
+  </div>
+</div>

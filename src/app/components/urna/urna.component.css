@@ -1,0 +1,165 @@
+  .urna {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    background: whitesmoke;
+    height: 800px;
+  }
+
+
+  /* INTERFACE DA URNA  */
+
+  .interface {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 2px solid black;
+    margin: 5px;
+    width: 1200px;
+    font-size: 30px;
+  }
+
+  .interface h1 {
+    margin-left: 10px;
+    grid-row-start: 0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 27px;
+  }
+
+  .infoCandidato {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin-left: 70px;
+    font-size: 50px;
+  }
+
+  [numero-candidato] {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 20px;
+  }
+
+  .numero {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    margin-left: 30px;
+  }
+
+  .numero label {
+    margin-left: 3px;
+    padding: 8px;
+    border: solid 2px #222;
+  }
+
+  [nome-candidato] {
+    grid-row-start: 5;
+    margin-left: 20px;
+    margin-top: 24px;
+  }
+
+  .nome {
+    grid-row-start: 5;
+    grid-column-start: 2;
+    grid-column-end: 4; 
+    margin: 30px;
+    margin-top: 24px;
+    text-align: inherit;
+  }
+
+  [nome-partido] {
+    grid-row-start: 6;
+    margin-left: 20px;
+    margin-top: 24px;
+  }
+
+  .partido {
+    grid-row-start: 6;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin: 30px;
+    margin-top: 24px;
+  }
+
+  .fotoCandidato {
+    grid-column-start: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 280px;
+    margin: 3px;
+    border: 2px solid #222;
+  }
+
+  .help {
+    grid-row-start: 10;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin-top: 100px;
+    padding-left: 15px;
+    font-size: 20px;
+    border-top: 2px solid #222;
+  }
+
+  [help-confirma] {
+    margin-left: 30px;
+  }
+
+  [help-corrige] {
+    margin-left: 30px;
+  }
+
+
+  /* BOTOES DA URNA  */
+
+  .buttons {
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    background: #222;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .buttons button {
+    background: black;
+    color: white;
+    font-size: 30px;
+    border: none;
+    margin: 10px;
+    width: 220px;
+  }
+
+  .zero {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .buttons .branco {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    color: black;
+    background: white;
+  }
+
+  .buttons .corrige {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    color: black;
+    background: orangered;
+  }
+
+  .buttons .confirma {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    color: black;
+    background: green;
+  }
+
+  .buttons button:hover {
+    background: rgba(255, 255, 255, .5);
+  }

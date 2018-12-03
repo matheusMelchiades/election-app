@@ -1,0 +1,25 @@
+<div class="register">
+  <div class="content-title">
+    <h3>Register</h3>
+  </div>
+  <form [formGroup]="registerForm">
+
+    <input type="name" placeholder="Name" required formControlName="name">
+
+    <input type="name" placeholder="Last Name" required formControlName="lastName">
+
+    <input type="email" placeholder="Email address" required autofocus formControlName="email">
+
+    <input type="password" placeholder="Password" minlength="8" required formControlName="password">
+
+    <input type="password" placeholder="Password Confirm" minlength="8" required formControlName="passwordConfirm">
+
+    <button type="submit" (click)="register()" (keyup)="register()">Sign up</button>
+
+  </form>
+
+  <hr>
+  <div class="message">
+    {{ resp }}
+  </div>
+</div>

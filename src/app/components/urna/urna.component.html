@@ -1,0 +1,45 @@
+<div class="urna">
+    <div class="interface">
+       <h1>SEU VOTO PARA</h1>
+
+       <div class="infoCandidato">{{ description }}</div> <!-- deputado, presidente ...-->
+
+       <p numero-candidato>Numero: </p>
+       <!--numero candidato-->
+       <div class="numero">
+          <label *ngFor="let num of numbers">{{ num }}</label>
+         </div>
+
+       <p nome-candidato>Nome:</p>
+       <!--nome do candidato-->
+       <div class="nome">{{ name }}</div>
+
+       <p nome-partido>Partido: </p> <!-- nome do partido-->
+       <div class="partido">{{ partyName }}</div>
+
+       <img class="fotoCandidato" src="../../../assets/images/deadpool.png">
+
+       <div class="help">
+          <p help-title>Aperte a Tecla:</p>
+          <p help-confirma>CONFIRMA para CONFIRMAR este voto</p>
+          <p help-corrige>CORRIGE para REINICIAR este voto</p>
+       </div>
+
+    </div>
+
+    <form class="buttons" (click)="getCandidate()">
+       <button value="1" (click)="getVote(1)">1</button>
+       <button value="2" (click)="getVote(2)">2</button>
+       <button value="3" (click)="getVote(3)">3</button>
+       <button value="4" (click)="getVote(4)">4</button>
+       <button value="5" (click)="getVote(5)">5</button>
+       <button value="6" (click)="getVote(6)">6</button>
+       <button value="7" (click)="getVote(7)">7</button>
+       <button value="8" (click)="getVote(8)">8</button>
+       <button value="9" (click)="getVote(9)">9</button>
+       <button class="zero" value="0" (click)="getVote(0)">0</button>
+       <button class="branco" value="BRANCO" (click)="setVoteWhite()">BRANCO</button>
+       <button class="corrige" value="CORRIGE" (click)="corrige()">CORRIGE</button>
+       <button class="confirma" value="CONFIRMAR" (click)="confirma()">CONFIRMA</button>
+    </form>
+ </div>

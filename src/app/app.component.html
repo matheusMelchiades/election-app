@@ -1,0 +1,16 @@
+<div class="container-main" *ngIf="!urna">
+  <div class="container-login">
+    <nav *ngIf="navLogin">
+      <a routerLink="/login">Login</a>
+      <a routerLink="/register">Register</a>
+    </nav>
+    <hr style="margin: 3px;">
+    <div class="content" >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<div class="container-urna" *ngIf='urna'>
+  <app-urna></app-urna>
+</div>

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'ubuntu'
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  margin-left: 1px;
+}
+
+button {
+  background-color: #337ab7;
+  color: white;
+  margin: 0 auto;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100px;
+  padding: 5px;
+  transition: all 0.2s;
+  outline: none;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+button:hover {
+  border: 1.5px solid #337ab7;
+  background-color: white;
+  color: #337ab7;
+}
+
+.content-title {
+  display: grid;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: grid;
+  justify-content: center;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.message {
+	color: #337ab7;
+	display: grid;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 14px;
+}
